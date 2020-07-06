@@ -37,6 +37,23 @@ const siteContent = {
   },
 };
 
+// contact
+
+let contactHeader = document.querySelector(".contact h4")
+
+contactHeader.innerText = siteContent['contact']['contact-h4']
+
+let contactParagraphs = document.querySelectorAll(".contact p")
+
+contactParagraphs[0].innerText = siteContent['contact']['address'] 
+contactParagraphs[1].innerText = siteContent['contact']['phone'] 
+contactParagraphs[2].innerText = siteContent['contact']['email'] 
+
+let footer = document.querySelector("footer")
+
+footer.innerText = siteContent.footer.copyright
+
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
